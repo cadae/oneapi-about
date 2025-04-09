@@ -67,17 +67,13 @@
     }
     .steps {
       padding-left: 25px;
+      list-style-type: disc; /* Changed to use regular bullet points */
     }
     .steps li {
       margin-bottom: 10px;
       position: relative;
     }
-    .steps li::before {
-      content: "→";
-      position: absolute;
-      left: -20px;
-      color: #4A56E2;
-    }
+    /* Removed the ::before pseudo-element that was adding the arrow */
     .note {
       background-color: #fffde7;
       border-left: 4px solid #ffc107;
@@ -112,7 +108,11 @@
   <div class="container">
     <div class="header">
       <div class="logo">AGI Cloud</div>
-      <div class="tagline">Building the future of AI accessibility</div>
+      <div class="tagline">Your intelligent LLM API routing service</div>
+    </div>
+
+    <div class="promo">
+      <span class="credit-emoji">💰</span> $100 free credit upon signup - try powerful models like Gemini 2.5 Pro!
     </div>
 
     <div class="language-section">
@@ -120,17 +120,19 @@
         <div class="section">
           <p class="section-title">Our Mission</p>
           <div class="content">
-            <p>AGI Cloud is dedicated to making advanced AI models accessible to everyone. We provide intelligent routing and optimization of LLM API calls, ensuring you get the best performance and value.</p>
+            <p>AGI Cloud is committed to making advanced AI models easily accessible to everyone. Through our intelligent routing and optimized LLM API service, we ensure you get the best performance and value.</p>
+            <p>This is a non-profit service primarily designed to help users in mainland China access foreign AI APIs by bypassing network restrictions. All APIs are personally created and maintained to ensure stability and reliability.</p>
           </div>
         </div>
 
         <div class="section">
           <p class="section-title">Our Services</p>
           <ul class="steps">
-            <li>Intelligent API routing</li>
-            <li>Multi-model support</li>
-            <li>Cost optimization</li>
-            <li>Real-time performance monitoring</li>
+            <li>Intelligent API routing and optimization</li>
+            <li>Multi-model support including Gemini 2.5 Pro</li>
+            <li>Local chat history storage for privacy</li>
+            <li>Cross-device sync support via Upstash</li>
+            <li>Generous free credits system</li>
           </ul>
         </div>
       </div>
@@ -140,23 +142,27 @@
           <p class="section-title">关于我们</p>
           <div class="content">
             <p>AGI Cloud致力于让每个人都能便捷地使用先进的人工智能模型。我们提供智能路由和优化的LLM API调用服务，确保您获得最佳性能和价值。</p>
+            <p>这是一个非盈利目的网站，主要是为了方便国内用户绕过网络限制访问国外AI APIs。目前提供的API均为个人创建并维护，以确保服务稳定可靠。</p>
           </div>
         </div>
 
         <div class="section">
           <p class="section-title">我们的服务</p>
           <ul class="steps">
-            <li>智能API路由</li>
-            <li>多模型支持</li>
-            <li>成本优化</li>
-            <li>实时性能监控</li>
+            <li>智能API路由和优化</li>
+            <li>支持多种模型包括Gemini 2.5 Pro</li>
+            <li>本地存储聊天记录保护隐私</li>
+            <li>通过Upstash支持跨设备同步</li>
+            <li>慷慨的免费额度系统</li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="note" style="margin-top: 30px;">
-      <strong>Contact Us:</strong> support@agicloud.cc
+      <strong>Contact Us / 联系我们:</strong> support@agicloud.cc
+      <p>Welcome to share your API keys for community benefit. We carefully review all shared APIs to prevent abuse. You can support server maintenance through the recharge interface.</p>
+      <p>欢迎提供API一起共享。为防止滥用，我们会仔细审核所有共享的API。欢迎在充值界面打赏以支持服务器维护。</p>
     </div>
   </div>
 </body>
